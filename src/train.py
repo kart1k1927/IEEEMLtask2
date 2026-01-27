@@ -11,7 +11,11 @@ with open("configs/config.yaml", "r") as f:
 torch.manual_seed(config["seed"])
 
 # Load model
-model = SentenceTransformer(config["model_name"])
+from sentence_transformers import SentenceTransformer
+
+model = SentenceTransformer(
+    "kart1k1927/ieeeml-task2-finetuned"
+)
 
 # Dummy training data (replace with your dataset later)
 train_examples = [
@@ -34,5 +38,3 @@ model.fit(
     warmup_steps=10
 )
 
-# Save model
-model.save(config["fine_tuned_model_path"])
