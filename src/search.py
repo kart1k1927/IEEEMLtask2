@@ -10,13 +10,13 @@ with open("configs/config.yaml", "r") as f:
 # Load fine-tuned model from Hugging Face
 model = SentenceTransformer(config["model_name"])
 
-# Dummy corpus (replace with MS MARCO subset later)
-documents = [
-    "Machine learning is a field of AI.",
-    "Deep learning uses neural networks.",
-    "Support vector machines are supervised models.",
-    "Transformers are powerful NLP models.",
-]
+# MACRO subset
+import pandas as pd
+
+corpus = pd.read_csv("data/corpus.csv")
+documents = corpus["text"].tolist()
+doc_ids = corpus["doc_id"].tolist()
+
 
 # Encode documents
 doc_embeddings = model.encode(documents, convert_to_numpy=True)
@@ -35,7 +35,8 @@ def search(query, top_k=5):
     results = []
 
     for score, idx in zip(scores[0], indices[0]):
-        results.append((documents[idx], float(score)))
+       results.append((doc_ids[idx], documents[idx], float(score)))
+
 
     return results
 
@@ -47,4 +48,5 @@ if __name__ == "__main__":
 
         results = search(query, config["top_k"])
         for rank, (doc, score) in enumerate(results, 1):
-            print(f"{rank}. {doc}  (score={score:.4f})")
+          print(f"{rank}. [DocID: {doc_id}] {doc[:200]}... (score={score:.4f})")
+
