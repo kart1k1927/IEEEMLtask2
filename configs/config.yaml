@@ -1,0 +1,7 @@
+model_name: sentence-transformers/all-MiniLM-L6-v2
+fine_tuned_model_path: models/fine_tuned
+batch_size: 32
+epochs: 3
+learning_rate: 2e-5
+top_k: 10
+seed: 42
