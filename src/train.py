@@ -10,14 +10,10 @@ with open("configs/config.yaml", "r") as f:
 # Reproducibility
 torch.manual_seed(config["seed"])
 
-# Load model
-from sentence_transformers import SentenceTransformer
+# Load model from Hugging Face
+model = SentenceTransformer(config["model_name"])
 
-model = SentenceTransformer(
-    "kart1k1927/ieeeml-task2-finetuned"
-)
-
-# Dummy training data (replace with your dataset later)
+# Dummy training data (replace later)
 train_examples = [
     InputExample(texts=["Machine learning is fun", "I love studying ML"]),
     InputExample(texts=["Deep learning uses neural networks", "Neural nets power deep learning"]),
@@ -38,3 +34,5 @@ model.fit(
     warmup_steps=10
 )
 
+# Save model
+model.save("models/fine_tuned")
