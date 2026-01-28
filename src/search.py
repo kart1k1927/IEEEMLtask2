@@ -60,10 +60,8 @@ def search(query, top_k=10):
 # Example query (THIS is important)
 # -----------------------------
 if __name__ == "__main__":
-    search("machine learning applications", top_k=config["top_k"])
-
+    query = input("Enter your query: ")
 
     results = search(query, config["top_k"])
-    for rank, (doc, score) in enumerate(results, 1):
-        print(f"{rank}. [DocID: {doc_id}] {doc[:200]}... (score={score:.4f})")
-
+    for r in results:
+        print(r)
