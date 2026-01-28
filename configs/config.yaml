@@ -1,4 +1,4 @@
-model_name: kart1k1927/ieeeml-task2-finetuned
+model_name: sentence-transformers/all-MiniLM-L6-v2
 batch_size: 32
 epochs: 3
 learning_rate: 2e-5
