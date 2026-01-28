@@ -7,4 +7,6 @@ torch
 torchvision
 tqdm
 pyyaml
+faiss-cpu
+sentence-transformers
 
