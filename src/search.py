@@ -63,7 +63,7 @@ if __name__ == "__main__":
     search("machine learning applications", top_k=config["top_k"])
 
 
-        results = search(query, config["top_k"])
-        for rank, (doc, score) in enumerate(results, 1):
-          print(f"{rank}. [DocID: {doc_id}] {doc[:200]}... (score={score:.4f})")
+    results = search(query, config["top_k"])
+    for rank, (doc, score) in enumerate(results, 1):
+        print(f"{rank}. [DocID: {doc_id}] {doc[:200]}... (score={score:.4f})")
 
