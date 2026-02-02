@@ -21,6 +21,7 @@ Demonstrate practical understanding of NLP embeddings and vector databases
 Python 3
 
 Sentence Transformers (Hugging Face)
+huggingface link: https://huggingface.co/kart1k1927/ieeeml-task2-finetuned
 
 FAISS (CPU) – Facebook AI Similarity Search
 
