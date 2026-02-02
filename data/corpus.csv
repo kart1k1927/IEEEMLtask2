@@ -1,6 +1,51 @@
 doc_id,text
-D1,Machine learning is a field of artificial intelligence that learns from data.
-D2,Deep learning uses neural networks with many layers.
-D3,Transformers are powerful models for NLP tasks.
-D4,Sentence embeddings are used for semantic search.
-D5,Information retrieval systems rank documents by relevance.
+D1,Machine learning is a branch of artificial intelligence that enables systems to learn from data.
+D2,Supervised learning trains models using labeled datasets to make predictions.
+D3,Unsupervised learning identifies hidden patterns in unlabeled data.
+D4,Reinforcement learning uses rewards and penalties to train intelligent agents.
+D5,Deep learning employs neural networks with many hidden layers.
+D6,Artificial neural networks are inspired by the structure of the human brain.
+D7,Convolutional neural networks are widely used in image recognition tasks.
+D8,Recurrent neural networks are effective for modeling sequential data.
+D9,Long short term memory networks address the vanishing gradient problem.
+D10,Transformers rely on self attention mechanisms for sequence modeling.
+D11,Attention mechanisms improve performance in natural language processing tasks.
+D12,Sentence embeddings represent text as dense numerical vectors.
+D13,Semantic search retrieves documents based on meaning rather than keywords.
+D14,FAISS is a library for efficient similarity search on large datasets.
+D15,Vector databases enable fast nearest neighbor search in high dimensions.
+D16,Information retrieval systems rank documents based on relevance.
+D17,TF IDF is a statistical measure used in text mining.
+D18,BERT is a transformer based model for language understanding.
+D19,Pretrained language models improve performance on downstream tasks.
+D20,Transfer learning allows reuse of learned representations.
+D21,Computer vision focuses on extracting information from images and videos.
+D22,Medical imaging applies deep learning for disease detection.
+D23,Image segmentation divides images into meaningful regions.
+D24,Object detection identifies objects within an image.
+D25,Speech recognition converts spoken language into text.
+D26,Natural language processing enables machines to understand human language.
+D27,Named entity recognition identifies entities in text data.
+D28,Text classification assigns predefined categories to documents.
+D29,Clustering groups similar data points together.
+D30,Dimensionality reduction reduces feature space complexity.
+D31,Principal component analysis is a popular dimensionality reduction technique.
+D32,Autoencoders learn compressed representations of data.
+D33,Recommendation systems suggest relevant items to users.
+D34,Collaborative filtering uses user interaction data for recommendations.
+D35,Anomaly detection identifies unusual patterns in data.
+D36,Time series analysis studies data collected over time.
+D37,Optimization algorithms minimize loss functions during training.
+D38,Gradient descent is widely used for optimization in machine learning.
+D39,Regularization prevents overfitting in models.
+D40,Dropout improves generalization in neural networks.
+D41,Evaluation metrics assess model performance.
+D42,Precision and recall are common classification metrics.
+D43,Cross validation improves reliability of model evaluation.
+D44,Big data technologies handle large scale datasets.
+D45,Cloud computing provides scalable resources for machine learning workloads.
+D46,Machine learning is a field of artificial intelligence that learns from data.
+D47,Deep learning uses neural networks with many layers.
+D48,Transformers are powerful models for NLP tasks.
+D49,Sentence embeddings are used for semantic search.
+D50,Information retrieval systems rank documents by relevance.
